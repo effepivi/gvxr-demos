@@ -13,7 +13,7 @@ institute: Bangor University
 - [Quantitative Validation](#Quantitative-Validation)
 - [Density for Different Materials (human tissues) from the Literature](#Density-for-Different-Materials-human-tissues-from-the-Literature)
     - [Mass Attenuation Coefficients](#Mass-Attenuation-Coefficients)
-    - [Mass Attenuation Coefficients: Tissue, Soft (ICRU-44)](#Mass-Attenuation-Coefficients-Tissue-Soft=-ICRU-44)
+    - [Mass Attenuation Coefficients: Tissue, Soft (ICRU-44)](#Mass-Attenuation-Coefficients-Tissue-Soft-ICRU-44)
     - [Mass Attenuation Coefficients: Bone, Cortical (ICRU-44)](#Mass-Attenuation-Coefficients-Bone-Cortical-ICRU-44)
 - [More testing](#More-testing)
     - [Test case](#Test-case)

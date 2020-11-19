@@ -9,8 +9,8 @@ institute: Bangor University
 # Contents
 
 - [Recording of this talk](#Recording-of-this-talk)
-- [X-photons/matter Interactions (1/2)](#X-photons-matter-Interactions-12)
-- [X-photons/matter Interactions (2/2)](#X-photons-matter-Interactions-22)
+- [X-photons/matter Interactions (1/2)](#X-photonsmatter-Interactions-12)
+- [X-photons/matter Interactions (2/2)](#X-photonsmatter-Interactions-22)
 - [Beer-Lambert Law (Attenuation Law)](#Beer-Lambert-Law-Attenuation-Law-)
 - [Example (monochromatic case)](#Example-monochromatic-case-)
 - [Beer-Lambert Law in the polychromatic case](#Beer-Lambert-Law in-the-polychromatic-case)

@@ -1,0 +1,57 @@
+{
+  "WindowSize": [512, 512],
+  "Source": {
+    "Position": [-40.0,  0.0, 0.0, "cm"],
+    "Shape": "ParallelBeam",
+    "Beam": [
+      {
+        "Energy": 33,
+        "Unit": "keV",
+        "PhotonCount": 96
+      },
+
+      {
+        "Energy": 66,
+        "Unit": "keV",
+        "PhotonCount": 3
+      },
+
+      {
+        "Energy": 99,
+        "Unit": "keV",
+        "PhotonCount": 1
+      }
+    ]
+  },
+
+  "Detector": {
+    "Position": [40.0, 0.0, 0.0, "cm"],
+    "UpVector": [0, 0, -1],
+    "NumberOfPixels": [641, 320],
+    "Spacing": [0.25, 0.25, "mm"]
+  },
+
+  "Samples": [
+    {
+      "Label": "cubes",
+      "Path": "../2-multi_objects/cubes.stl",
+      "Unit": "mm",
+      "Material": ["Element", "Cu"]
+    },
+
+    {
+      "Label": "gVXR",
+      "Path": "../2-multi_objects/gVXR.stl",
+      "Unit": "mm",
+      "Material": ["Compound", "H2O"],
+      "Density": 1
+    },
+
+    {
+      "Label": "spheres",
+      "Path": "../2-multi_objects/spheres.stl",
+      "Unit": "mm",
+      "Material": ["Element", "Ca"]
+    }
+  ]
+}

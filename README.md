@@ -11,7 +11,7 @@ institute: Bangor University
 
 1. [Overview of gVirtualXRay](1-overview/README.md)
 2. [Theory of X-ray simulation](2-theory/README.md)
-3. [How is it implemented on GPU using OpenGL?](3-implementation/README.md
+3. [How is it implemented on GPU using OpenGL?](3-implementation/README.md)
 4. [Validation: How accurate gVirtualRay is?](4-validation/README.md)
 5. [Live installation on GNU/Linux (recording)](5-install/README.md
     - ![openSuse](img/openSUSE-logo.png) [Leap 15.2](https://software.opensuse.org/distributions/leap/15_2) on a desktop PC

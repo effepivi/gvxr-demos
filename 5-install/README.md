@@ -8,7 +8,6 @@ institute: Bangor University
 
 # Contents
 
-- [Click here to download the source code (v1.1.6)](https://sourceforge.net/projects/gvirtualxray/files/1.1/gVirtualXRay-1.1.6-Source.zip/download)
 - [Recordings of this talk](#Recordings-of-this-talk)
 - [Requirements](#requirements)
     - [For GNU/Linux](#for-gnulinux)
@@ -35,7 +34,7 @@ institute: Bangor University
 
 [![Watch the video](https://img.youtube.com/vi/9zuvurhKBpY/0.jpg)](https://youtu.be/9zuvurhKBpY "Compilation and installation of gVirtualXRay (MS Windows)")
 
-# 1. Requirements
+# Requirements
 
 Make sure you have:
 
@@ -43,7 +42,7 @@ Make sure you have:
 - A C++ compiler; and
 - A GPU that supports OpenGL (integrated GPUs are fine).
 
-# For GNU/Linux
+## For GNU/Linux
 
 The examples below are for openSUSE Leap but you can adapt them for your own distro.
 
@@ -77,7 +76,7 @@ The examples below are for openSUSE Leap but you can adapt them for your own dis
         R-core R-base  R-core-devel R-base-devel
 ```         
 
-# For Mac OS X:
+## For Mac OS X:
 
 1. Install XCode from the Mac App Store.
 2. Install the Command Line Tools package via the Terminal application using
@@ -87,7 +86,7 @@ The examples below are for openSUSE Leap but you can adapt them for your own dis
 3. Install CMake from [https://cmake.org/download/](https://cmake.org/download/)
 4. For Wrappers, you may want to install SWIG and Python 3. I use homebrew for that purpose, see [https://brew.sh/](https://brew.sh/)
 
-# For Microsoft Windows
+## For Microsoft Windows
 
 1. Install Visual Studio from [https://visualstudio.microsoft.com/vs/](https://visualstudio.microsoft.com/vs/)
     - **Make sure to select the C++ language**
@@ -96,14 +95,15 @@ The examples below are for openSUSE Leap but you can adapt them for your own dis
 4. You may want to install a SVN client, e.g. TortoiseSVN from [https://tortoisesvn.net/downloads.html](https://tortoisesvn.net/downloads.html)
 5. For Wrappers, you may want to install Python 3 from [https://www.python.org/downloads/](https://www.python.org/downloads/) Make sure to install the development libraries.
 
-# Download the latest version of the source code
 
-- The latest release [(gVirtualXRay-1.1.5-Source.zip)](https://sourceforge.net/projects/gvirtualxray/files/1.1/gVirtualXRay-1.1.5-Source.zip/download) available at [https://sourceforge.net/projects/gvirtualxray/files/1.1/gVirtualXRay-1.1.5-Source.zip/download](https://sourceforge.net/projects/gvirtualxray/files/1.1/gVirtualXRay-1.1.5-Source.zip/download) or
+# Installation from the source code
+
+## Download the latest version of the source code
+
+- The latest release [(gVirtualXRay-1.1.6-Source.zip)](https://sourceforge.net/projects/gvirtualxray/files/1.1/gVirtualXRay-1.1.6-Source.zip/download) available at [https://sourceforge.net/projects/gvirtualxray/files/1.1/gVirtualXRay-1.1.6-Source.zip/download](https://sourceforge.net/projects/gvirtualxray/files/1.1/gVirtualXRay-1.1.6-Source.zip/download) or
 - The latest version from SVN at [https://svn.code.sf.net/p/gvirtualxray/code/trunk](https://svn.code.sf.net/p/gvirtualxray/code/trunk)
 
-# 2. Installation from the source code
-
-# GNU/Linux and Mac OS X
+## GNU/Linux and Mac OS X
 
 Assuming the system is ready.
 
@@ -119,9 +119,9 @@ In the example below, I install it in my home directory in `gvxr-install`.
 ```
 3. Download the latest release:
 ```bash
-    $ wget https://sourceforge.net/projects/gvirtualxray/files/1.1/gVirtualXRay-1.1.5-Source.zip/download
-    $ mv download gVirtualXRay-1.1.5-Source.zip
-    $ unzip gVirtualXRay-1.1.5-Source.zip
+    $ wget https://sourceforge.net/projects/gvirtualxray/files/1.1/gVirtualXRay-1.1.6-Source.zip/download
+    $ mv download gVirtualXRay-1.1.6-Source.zip
+    $ unzip gVirtualXRay-1.1.6-Source.zip
 ```
 4. Create a directory where the binaries will be created and go in this directory.
 ```bash
@@ -143,7 +143,7 @@ In the example below, I install it in my home directory in `gvxr-install`.
             -DBUILD_WRAPPER_R:BOOL=ON \
             -DBUILD_WRAPPER_RUBY:BOOL=ON \
             -DBUILD_WRAPPER_TCL:BOOL=ON \
-            -S ../gVirtualXRay-1.1.5 \
+            -S ../gVirtualXRay-1.1.6 \
             -B $PWD
 ```
     - `ccmake`:
@@ -199,9 +199,9 @@ export GVXR_INSTALL_DIR=$HOME/gvirtualxray-install
 mkdir ~/gvxr
 cd ~/gvxr
 
-wget https://sourceforge.net/projects/gvirtualxray/files/1.1/gVirtualXRay-1.1.5-Source.zip/download
-mv download gVirtualXRay-1.1.5-Source.zip
-unzip gVirtualXRay-1.1.5-Source.zip
+wget https://sourceforge.net/projects/gvirtualxray/files/1.1/gVirtualXRay-1.1.6-Source.zip/download
+mv download gVirtualXRay-1.1.6-Source.zip
+unzip gVirtualXRay-1.1.6-Source.zip
 
 mkdir gvxr-bin
 cd gvxr-bin
@@ -218,7 +218,7 @@ cmake \
     -DBUILD_WRAPPER_R:BOOL=OFF \
     -DBUILD_WRAPPER_RUBY:BOOL=OFF \
     -DBUILD_WRAPPER_TCL:BOOL=OFF \
-    -S ../gVirtualXRay-1.1.5 \
+    -S ../gVirtualXRay-1.1.6 \
     -B $PWD
 
 make -j16
@@ -237,15 +237,11 @@ echo "##########################################################################
 
 ```
 
-
-
-
-
-# For Windows
+## For Windows
 
 I recommand to use **64 bits** for all the components, including for **Python 3**.
 
-1. Download and extract gVirtualXRay's code from [https://sourceforge.net/projects/gvirtualxray/files/1.1/gVirtualXRay-1.1.5-Source.zip/download](https://sourceforge.net/projects/gvirtualxray/files/1.1/gVirtualXRay-1.1.5-Source.zip/download).
+1. Download and extract gVirtualXRay's code from [https://sourceforge.net/projects/gvirtualxray/files/1.1/gVirtualXRay-1.1.6-Source.zip/download](https://sourceforge.net/projects/gvirtualxray/files/1.1/gVirtualXRay-1.1.6-Source.zip/download).
 2. Open CMake's gui.
 
 ![Illustration](screenshots/cmake0.png)
@@ -295,7 +291,7 @@ At the end, in the output, you should see something like
 ```
 
 
-# Installation directory content in Windows
+### Installation directory content in Windows
 
 On Windows, you Should see 4 or 5 directories in the installation directory depending on wrappers:
 
@@ -303,7 +299,7 @@ On Windows, you Should see 4 or 5 directories in the installation directory depe
 - third_party
   - include
   - lib (Windows) or lib64 (GNU/Linux and Mac OS X???)
-- gVirtualXRay-1.1.5
+- gVirtualXRay-1.1.6
   - Bin2C.cmake
   - CreateHeaderFiles.cmake
   - gVirtualXRayConfig.cmake
@@ -331,7 +327,7 @@ On Unixes, you Should see 3 or 4 directories in the installation directory depen
 - third_party
   - include
   - lib (Windows and Mac OS X) or lib64 (GNU/Linux)
-- gVirtualXRay-1.1.5
+- gVirtualXRay-1.1.6
   - Bin2C.cmake
   - CreateHeaderFiles.cmake
   - gVirtualXRayConfig.cmake

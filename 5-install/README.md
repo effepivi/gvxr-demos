@@ -237,6 +237,35 @@ echo "##########################################################################
 
 ```
 
+### Installation directory content in GNU/Linux and Mac OS X
+
+On Unixes, you Should see 3 or 4 directories in the installation directory depending on wrappers:
+
+- third_party
+  - include
+  - lib (Windows and Mac OS X) or lib64 (GNU/Linux)
+- gVirtualXRay-1.1.6
+  - Bin2C.cmake
+  - CreateHeaderFiles.cmake
+  - gVirtualXRayConfig.cmake
+  - include
+  - lib
+  - LICENSE.txt
+  - test
+  - third_party
+  - UsegVirtualXRay.cmake
+- SimpleGVXR-1.0.4
+  - include
+  - lib
+  - SimpleGVXR-doc.i
+  - SimpleGVXRConfig.cmake
+  - test
+  - UseSimpleGVXR.cmake
+- gvxrWrapper-1.0.4
+  - data
+  - python3
+
+
 ## For Windows
 
 I recommand to use **64 bits** for all the components, including for **Python 3**.
@@ -320,35 +349,9 @@ On Windows, you Should see 4 or 5 directories in the installation directory depe
   - data
   - python3
 
-# Installation directory content in GNU/Linux and Mac OS X
 
-On Unixes, you Should see 3 or 4 directories in the installation directory depending on wrappers:
 
-- third_party
-  - include
-  - lib (Windows and Mac OS X) or lib64 (GNU/Linux)
-- gVirtualXRay-1.1.6
-  - Bin2C.cmake
-  - CreateHeaderFiles.cmake
-  - gVirtualXRayConfig.cmake
-  - include
-  - lib
-  - LICENSE.txt
-  - test
-  - third_party
-  - UsegVirtualXRay.cmake
-- SimpleGVXR-1.0.4
-  - include
-  - lib
-  - SimpleGVXR-doc.i
-  - SimpleGVXRConfig.cmake
-  - test
-  - UseSimpleGVXR.cmake
-- gvxrWrapper-1.0.4
-  - data
-  - python3
-
-# Test the Python wrapper
+## Test the Python wrapper
 
 1.  Go to `gvxrWrapper-1.0.4/python3`,
 2. Execute the test script. You should see something like:
@@ -383,7 +386,7 @@ The X-ray image is displayed using linear, log and power law colour scales using
 - `lbuffer-0.mha`: contains the length of X-rays crossed in the 3-D object.
 10. If you want to create your own simulations, have a look at the script. You can find it at [https://sourceforge.net/p/gvirtualxray/code/HEAD/tree/trunk/Wrappers/python3/test.py](https://sourceforge.net/p/gvirtualxray/code/HEAD/tree/trunk/Wrappers/python3/test.py).
 
-# For SuperComputing Wales
+## For SuperComputing Wales
 
 1. Open a terminal, log on SCW using SSH, and choose where the binaries should be installed. **It must be a directory where you can write.**.
 In the example below, I install it in my home directory in `gvxr-install`.

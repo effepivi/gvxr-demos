@@ -13,7 +13,7 @@ institute: Bangor University
 - [X-photons/matter Interactions (2/2)](#X-photonsmatter-Interactions-22)
 - [Beer-Lambert Law (Attenuation Law)](#Beer-Lambert-Law-Attenuation-Law)
 - [Example (monochromatic case)](#Example-monochromatic-case)
-- [Beer-Lambert Law in the polychromatic case](#Beer-Lambert-Law in-the-polychromatic-case)
+- [Beer-Lambert Law in the polychromatic case](#Beer-Lambert-Law-in-the-polychromatic-case)
 - [Example (polychromatic case)](#Example-polychromatic-case)
 
 # Recording of this talk
@@ -67,7 +67,7 @@ institute: Bangor University
 
 # Example (monochromatic case)
 
-[http://gvirtualxray.sourceforge.net/validation/validation_03/beer_lambert_law_monochromatic.php](http://gvirtualxray.sourceforge.net/validation/validation_03/beer_lambert_law_monochromatic.php)
+See [http://gvirtualxray.sourceforge.net/validation/validation_03/beer_lambert_law_monochromatic.php](http://gvirtualxray.sourceforge.net/validation/validation_03/beer_lambert_law_monochromatic.php)
 
 # Beer-Lambert Law in the polychromatic case
 
@@ -83,7 +83,7 @@ with j the j-th energy channel
 
 # Example (polychromatic case)
 
-[http://gvirtualxray.sourceforge.net/validation/validation_05/beer_lambert_law_polychromatic.php](http://gvirtualxray.sourceforge.net/validation/validation_05/beer_lambert_law_polychromatic.php)
+See [http://gvirtualxray.sourceforge.net/validation/validation_05/beer_lambert_law_polychromatic.php](http://gvirtualxray.sourceforge.net/validation/validation_05/beer_lambert_law_polychromatic.php)
 
 # Back to main menu
 

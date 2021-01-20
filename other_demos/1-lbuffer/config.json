@@ -1,0 +1,34 @@
+{
+  "WindowSize": [512, 512],
+  "Source": {
+    "Position": [-40.0,  0.0, 0.0, "cm"],
+    "Shape": "PointSource"
+  },
+
+  "Detector": {
+    "Position": [40.0, 0.0, 0.0, "cm"],
+    "UpVector": [0, 0, -1],
+    "NumberOfPixels": [641, 320],
+    "Spacing": [0.25, 0.25, "mm"]
+  },
+
+  "Samples": [
+    {
+      "Label": "cubes",
+      "Path": "cubes.stl",
+      "Unit": "mm"
+    },
+
+    {
+      "Label": "gVXR",
+      "Path": "gVXR.stl",
+      "Unit": "mm"
+    },
+
+    {
+      "Label": "spheres",
+      "Path": "spheres.stl",
+      "Unit": "mm"
+    }
+  ]
+}

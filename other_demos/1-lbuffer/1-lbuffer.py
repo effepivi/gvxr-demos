@@ -203,5 +203,6 @@ if __name__ == '__main__':
         plt.title("Path length (in cm) of " + key);
         plt.colorbar();
         plt.savefig(key + "_path_length.pdf");
+        plt.savefig(key + "_path_length.png");
 
     plt.show();

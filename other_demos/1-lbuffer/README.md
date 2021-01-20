@@ -4,7 +4,7 @@ This tutorial show you how to compute the path length for 3 objects (here from S
 
 ![3D objects](screenshot.png)
 
-We store the parameters of the scanning geometry using a JSON file ([`param.json`](param.json)):
+We store the parameters of the scanning geometry using a JSON file ([`config.json`](config.json)):
 
 ```json
 {

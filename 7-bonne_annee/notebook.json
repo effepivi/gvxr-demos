@@ -1,0 +1,68 @@
+{
+    "WindowSize": [500, 500],
+
+    "Detector": {
+        "Position": [0.0, 0.0, -150.0, "mm"],        
+        "UpVector": [0, 1, 0],
+        "NumberOfPixels": [500, 400],
+        "Size": [250, 200, "mm"],
+        "Energy response": {
+            "File": "energyResponseDetector.txt",
+            "Energy": "MeV"
+        }
+    },
+
+    "Source": {
+        "Position": [0.0, 0.0, 1000.0, "mm"],
+        "Shape": "ParallelBeam",
+        "Beam": {
+            "kvp": 50,
+            "tube angle": 12,
+            "filter": [
+                ["Al", 0.5]
+            ]
+        }
+    },
+
+    "Samples": [
+        {
+            "Label": "Muscle",
+            "Path": "frame.stl",
+            "Unit": "mm",
+            "Material": ["Mixture", [
+                    1, 0.102,
+                    6, 0.143,
+                    7, 0.034,
+                    8, 0.710,
+                    11, 0.001,
+                    15, 0.002,
+                    16, 0.003,
+                    17, 0.001,
+                    19, 0.004
+                ]
+            ],
+            "Density": 1.050,
+            "Type" : "inner"
+        },
+
+        {
+            "Label": "Bone",
+            "Path": "bonne_annee.stl",
+            "Unit": "mm",
+            "Material": ["Mixture", [
+                    1, 0.040,
+                    6, 0.160,
+                    7, 0.045,
+                    8, 0.469,
+                    11, 0.001,
+                    12, 0.002,
+                    15, 0.090,
+                    16, 0.003,
+                    20, 0.190
+                ]
+            ],
+            "Density": 1.920,
+            "Type" : "inner"
+        }
+    ]
+}

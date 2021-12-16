@@ -1,0 +1,4 @@
+*.mha
+.ipynb_checkpoints
+__pycache__
+*.stl

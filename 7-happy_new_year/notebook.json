@@ -3,9 +3,9 @@
 
     "Detector": {
         "Position": [0.0, -150.0, 0.0, "mm"],        
-        "UpVector": [0, 0, 1],
-        "NumberOfPixels": [800, 400],
-        "Size": [200, 100, "mm"],
+        "UpVector": [0, 0, -1],
+        "NumberOfPixels": [800, 150],
+        "Size": [200, 37.5, "mm"],
         "Energy response": {
             "File": "energyResponseDetector.txt",
             "Energy": "MeV"
@@ -13,8 +13,8 @@
     },
 
     "Source": {
-        "Position": [0.0,1000.0, 0.0, "mm"],
-        "Shape": "ParallelBeam",
+        "Position": [0.0, 100.0, 0.0, "m"],
+        "Shape": "PointSource",
         "Beam": {
             "kvp": 50,
             "tube angle": 12,

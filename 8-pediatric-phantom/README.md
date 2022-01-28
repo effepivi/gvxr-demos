@@ -51,3 +51,9 @@ conda activate gvxr-demo
 ```
 jupyter-lab
 ```
+
+Alternatively, you can run the corresponding Python script
+
+```
+python3 pediatric-demo.py
+```

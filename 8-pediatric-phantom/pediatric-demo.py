@@ -1,13 +1,9 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # coding: utf-8
 
 # In[1]:
 
 
-get_ipython().run_line_magic('matplotlib', 'inline')
-
-from IPython.display import display
-from IPython.display import Image
 
 import GPUtil
 from cpuinfo import get_cpu_info
@@ -26,7 +22,7 @@ def printSystemInfo():
     print("CPU:\n", "\t" + get_cpu_info()["brand_raw"] + "\n")
 
     print("RAM:\n\t" + str(round(psutil.virtual_memory().total / (1024.0 **3))), "GB")
-    
+
     print("GPU:")
     for gpu in GPUtil.getGPUs():
         print("\tName:", gpu.name)
@@ -37,15 +33,15 @@ def printSystemInfo():
 # # Realistic simulation of X-ray radiographs using gVirtualXRay
 # ## With a realistic beam spectrum and taking into account the energy response of the detector
 # ### Authors: F. P. Vidal and J. M. Létang
-# 
+#
 # **Purpose:** In this notebook, we aim to demonstrate how to use gVirtualXRay to generate analytic simulations on GPU. We take into account i) a realistic anatomical phantom, ii) a realistic clinical scenario, iii) a realistic beam spectrum,  and iv) the energy response of the detector.
-# 
+#
 # **Material and Methods:** We downloaded the paediatric phantom from the [p**E**diat**R**ic dosimet**R**y personalized platf**OR**m (ERROR) project](https://error.upatras.gr/). It corresponds to the anatomy of a 5 year old boy. We generated surfaces meshes from the segmented data using [VTK](https://www.vtk.org/). We used the definitions of tissue substitutes provided in the [ICRU Report 44](https://www.icru.org/report/tissue-substitutes-in-radiation-dosimetry-and-measurement-report-44/) by the [International Commission on Radiation Units and Measurements](https://www.icru.org/). The material composition is available at [https://physics.nist.gov/PhysRefData/XrayMassCoef/tab2.html](https://physics.nist.gov/PhysRefData/XrayMassCoef/tab2.html).
 
 # In[3]:
 
 
-Image(filename="pediatric_model.png", width=800)
+# Image(filename="pediatric_model.png", width=800)
 
 
 # In our simulation the source-to-object distance (SOD) is 1000mm, and the source-to-detector distance (SDD) is 1125mm. The beam spectrum is polychromatic. The voltage is 85 kV. The filteration is 0.1 mm of copper and 1 mm of aluminium. The energy response of the detector is considered. It mimics a 600-micron thick CsI scintillator.
@@ -53,7 +49,7 @@ Image(filename="pediatric_model.png", width=800)
 # In[4]:
 
 
-Image(filename="pediatric-setup.png")
+# Image(filename="pediatric-setup.png")
 
 
 # **Results:** The calculations were performed on the following platform:
@@ -100,7 +96,6 @@ from tifffile import imsave # Write TIFF files
 
 import datetime # For the runtime
 
-import k3d, base64
 import SimpleITK as sitk
 from stl import mesh
 
@@ -112,7 +107,7 @@ import json2gvxr # Set gVirtualXRay and the simulation up
 
 
 # ## Setting up gVirtualXRay
-# 
+#
 # Before simulating an X-ray image using gVirtualXRay, we must create an OpenGL context.
 
 # In[7]:
@@ -122,7 +117,7 @@ json2gvxr.initGVXR("configuration.json", "OPENGL")
 
 
 # ## X-ray source
-# 
+#
 # We create an X-ray source. It is a point source.
 
 # In[8]:
@@ -132,7 +127,7 @@ json2gvxr.initSourceGeometry()
 
 
 # ## Spectrum
-# 
+#
 # The spectrum is polychromatic.
 
 # In[9]:
@@ -165,7 +160,7 @@ plt.tight_layout()
 
 
 # ## Detector
-# 
+#
 # Create a digital detector
 
 # In[11]:
@@ -175,7 +170,7 @@ json2gvxr.initDetector()
 
 
 # ## Model the energy response of the detector
-# 
+#
 # Load the energy response
 
 # In[12]:
@@ -199,7 +194,7 @@ plt.tight_layout()
 
 
 # ## Sample
-# 
+#
 # Download and unzip the phantom
 
 # In[14]:
@@ -287,7 +282,7 @@ for threshold, organ in zip(df["Label"], df["Organs"]):
     if organ != "Air":
 
         print("Process", organ)
-        
+
         seg_fname = "pediatric_phantom_data/segmentations/" + organ + ".mha"
         mesh_fname = "pediatric_phantom_data/meshes/" + organ + ".stl"
         meshes.append(mesh_fname)
@@ -300,7 +295,7 @@ for threshold, organ in zip(df["Label"], df["Organs"]):
 
             # Smooth the binary segmentation
             smoothed_binary_image = sitk.AntiAliasBinary(binary_image)
-                            
+
             # Create a VTK image
             vtkimg = sitk2vtk(smoothed_binary_image, centre=True)
 
@@ -321,65 +316,9 @@ json2gvxr.initSamples(verbose=0)
 # In[20]:
 
 
-plot = k3d.plot()
-plot.background_color = 0xffffff
-
-for sample in json2gvxr.params["Samples"]:
-    
-    label = sample["Label"]
-    
-    fname = sample["Path"]
-
-    r, g, b, a = gvxr.getAmbientColour(label)
-    R = math.floor(255*r)
-    G = math.floor(255*g)
-    B = math.floor(255*b)
-    A = math.floor(255*a)
-
-    k3d_color = 0;
-    k3d_color |= (R & 255) << 16;
-    k3d_color |= (G & 255) << 8;
-    k3d_color |= (B & 255);
-
-    mesh_from_stl_file = mesh.Mesh.from_file(fname)
-
-    if label == "Muscle":
-        opacity = 0.4
-    else:
-        opacity = 1
-    geometry = k3d.mesh(mesh_from_stl_file.vectors.flatten(),
-                          range(int(mesh_from_stl_file.vectors.flatten().shape[0] / 3)),
-                          color=k3d_color, 
-                          wireframe=False, 
-                          flat_shading=False,
-                          name=fname,
-                          opacity=opacity)
-
-    plot += geometry   
-
-plot.display()
-plot.camera = [321.6678075002728,   -461.4855245196105, -34.86613985320561,
-                 0,                    0,                -1.635009765625,
-                 0.08017827340927154, -0.083269170696295, 0.9932963755519574]
-
-
-# In[21]:
-
-
-fname = 'pediatric_model.png'
-if not os.path.isfile(fname):
-
-    sleep(10)
-    plot.fetch_screenshot() # Not sure why, but we need to do it twice to get the right screenshot
-    sleep(10)
-
-    data = base64.b64decode(plot.screenshot)
-    with open(fname,'wb') as fp:
-        fp.write(data)
-
 
 # ## Runing the simulation
-# 
+#
 # Update the 3D visualisation and take a screenshot
 
 # In[22]:
@@ -435,40 +374,27 @@ gamma = 2
 vmin = xray_image_flat.min()
 vmax = xray_image_flat.max()
 
-def interact_plot():
+fig_plot = plt.figure(figsize= (20,10))
 
-    fig_plot = plt.figure(figsize= (20,10))
+plt.suptitle("Image simulated using gVirtualXRay", y=0.95)
+ax = plt.subplot(131)
+plt.imshow(xray_image_flat, cmap="gray")
+plt.colorbar(orientation='horizontal')
+ax.set_title("Using a linear colour scale")
 
-    plt.suptitle("Image simulated using gVirtualXRay", y=1.02)
-    ax = plt.subplot(131)
-    plt.imshow(xray_image_flat, cmap="gray")
-    plt.colorbar(orientation='horizontal')
-    ax.set_title("Using a linear colour scale")
+ax_img = plt.subplot(132)
+plt.imshow(xray_image_flat, norm=PowerNorm(gamma=1./gamma), cmap="gray")
+plt.colorbar(orientation='horizontal')
+ax_img.set_title("Using a Power-law colour scale")
 
-    ax_img = plt.subplot(132)
-    plt.imshow(xray_image_flat, norm=PowerNorm(gamma=1./gamma), cmap="gray")
-    plt.colorbar(orientation='horizontal')
-    ax_img.set_title("Using a Power-law colour scale")
+ax = plt.subplot(133)
+plt.imshow(xray_image_flat, norm=LogNorm(vmin=vmin, vmax=vmax), cmap="gray")
+plt.colorbar(orientation='horizontal')
+ax.set_title("Using a Log scale")
 
-    ax = plt.subplot(133)
-    plt.imshow(xray_image_flat, norm=LogNorm(vmin=vmin, vmax=vmax), cmap="gray")
-    plt.colorbar(orientation='horizontal')
-    ax.set_title("Using a Log scale")
-    
-    
-    plt.tight_layout()
-    plt.savefig('xray_image.png')
-    plt.close()
 
-    ## Callback function: plot y=Acos(x+phi)
-    def update_plot(gamma):
-        ax_img.imshow(xray_image_flat, norm=PowerNorm(gamma=1./gamma), cmap="gray")
-        display(fig_plot)
-
-    interact(update_plot,
-             gamma=widgets.FloatSlider(value=gamma, min=0.01, max=10.0, step=0.5, description="gamma"))
-
-interact_plot();
+plt.tight_layout()
+plt.savefig('xray_image.png')
 
 
 # ## Visualisation using gVirtualXRay
@@ -526,7 +452,7 @@ if not os.path.isfile(fname):
 # In[31]:
 
 
-Image(filename="screenshot.png")
+# Image(filename="screenshot.png")
 
 
 # In[32]:
@@ -535,7 +461,7 @@ Image(filename="screenshot.png")
 gvxr.setZoom(1549.6787109375)
 gvxr.setSceneRotationMatrix([-0.19267332553863525, -0.06089369207620621, 0.9793692827224731,  0.0,
                               0.9809651970863342,  -0.03645244985818863, 0.19072122871875763, 0.0,
-                              0.02408679760992527,  0.9974713325500488,  0.06675821542739868, 0.0, 
+                              0.02408679760992527,  0.9974713325500488,  0.06675821542739868, 0.0,
                               0.0,                  0.0,                 0.0,                 1.0])
 
 gvxr.setWindowBackGroundColour(0.5, 0.5, 0.5)
@@ -602,12 +528,14 @@ print("Average:", runtime_avg, "ms")
 print("Standard deviation:", runtime_std, "ms")
 
 
+plt.show()
+
+
 # ## All done
-# 
+#
 # Destroy the window
 
 # In[ ]:
 
 
 gvxr.destroyAllWindows()
-

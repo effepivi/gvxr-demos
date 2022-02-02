@@ -3,3 +3,5 @@ pediatric_phantom_data
 __pycache__
 .ipynb_checkpoints
 *.mha
+render
+

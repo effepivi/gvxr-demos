@@ -1,0 +1,21 @@
+name: gvxr-demo
+channels:
+    - conda-forge
+dependencies:
+    - SimpleITK
+    - k3d
+    - numpy
+    - tifffile
+    - pandas
+    - ipykernel
+    - ipython
+    - vtk
+    - jupyterlab
+    - numpy-stl
+    - gputil
+    - psutil
+    - pil
+    - pip
+    - pip:
+        - py-cpuinfo
+        - pymoo

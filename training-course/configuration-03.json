@@ -1,0 +1,35 @@
+{
+    "WindowSize": [512, 512],
+
+    "Detector": {
+        "Position": [10.0, 0.0, 0.0, "cm"],        
+        "UpVector": [0, 0, -1],
+        "NumberOfPixels": [640, 320],
+        "Size": [500, 500, "mm"],
+        "Spacing": [0.5, 0.5, "mm"]
+    },
+
+    
+    "Source": {
+        "Position": [-40.0,  0.0, 0.0, "cm"],
+        "Shape": "PointSource",
+        "Beam": [
+            {
+                "Energy": 0.08,
+                "Unit": "MeV",
+                "PhotonCount": 1000
+            }
+        ]
+    },
+
+    "Samples": [
+        {
+            "Label": "Dragon",
+            "Path": "input_data/welsh-dragon-small.stl",
+            "Unit": "mm",
+            "Material": ["Mixture", "Ti90Al6V4"],
+            "Density": 4.43,
+            "Type" : "inner"
+        }
+    ]
+}

@@ -42,6 +42,8 @@ gvxr.setWindowSize(
     window_size[1]
 );
 
+# Do not use artefact correction
+gvxr.disableArtefactFiltering()
 
 # Set up the beam
 print("Set up the beam")
@@ -209,11 +211,14 @@ flat = np.ones(projections.shape) * total_energy;
 
 projections = tomopy.normalize(projections, flat, dark)
 
+volume = sitk.GetImageFromArray(projections.astype(np.single));
+volume.SetSpacing([pixel_spacing[0] / gvxr.getUnitOfLength(pixel_spacing[2]),
+    pixel_spacing[1] / gvxr.getUnitOfLength(pixel_spacing[2]),
+    rotation_angle]);
+sitk.WriteImage(volume, 'projections-tomopy.mhd');
+
 # Calculate  -log(projections)  to linearize transmission tomography data
 projections = tomopy.minus_log(projections)
-
-volume = sitk.GetImageFromArray(projections);
-sitk.WriteImage(volume, 'projections-tomopy.mhd');
 
 # Set the rotation centre
 rot_center = int(projections.shape[2]/2);
@@ -226,8 +231,10 @@ plt.imshow(recon[int(projections.shape[1]/2), :, :])
 plt.show()
 
 # Save the volume
-volume = sitk.GetImageFromArray(recon);
-volume.SetSpacing([spacing_in_mm, spacing_in_mm, spacing_in_mm]);
+volume = sitk.GetImageFromArray(recon.astype(np.single));
+volume.SetSpacing([pixel_spacing[0] / gvxr.getUnitOfLength(pixel_spacing[2]),
+    pixel_spacing[0] / gvxr.getUnitOfLength(pixel_spacing[2]),
+    pixel_spacing[1] / gvxr.getUnitOfLength(pixel_spacing[2])]);
 sitk.WriteImage(volume, 'recon-tomopy.mhd');
 
 

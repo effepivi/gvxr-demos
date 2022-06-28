@@ -3,4 +3,4 @@ __pycache__
 
 output_data/*.*
 input_data/error_phantom.dae
-
+temp/

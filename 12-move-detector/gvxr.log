@@ -1,0 +1,268 @@
+
+
+--------------------------------------------------------------------------------
+Mon Oct 23 14:41:57 2023 ---- Open log file	gvxr.log
+--------------------------------------------------------------------------------
+Mon Oct 23 14:41:57 2023 ---- Create window (ID: -1)
+Mon Oct 23 14:41:57 2023 ---- Initialise GLFW
+Mon Oct 23 14:41:57 2023 ---- Create an OpenGL window with a 3.2 context.
+Mon Oct 23 14:41:58 2023 ---- Make the window's context current
+Mon Oct 23 14:41:58 2023 ---- Initialise GLEW
+Mon Oct 23 14:41:58 2023 ---- OpenGL vendor: NVIDIA Corporation
+Mon Oct 23 14:41:58 2023 ---- OpenGL renderer: NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2
+Mon Oct 23 14:41:58 2023 ---- OpenGL version: 3.2.0 NVIDIA 535.104.05
+Mon Oct 23 14:41:58 2023 ---- Use OpenGL 4.5.
+Mon Oct 23 14:41:58 2023 ---- Initialise the X-ray renderer if needed and if possible
+Mon Oct 23 14:41:59 2023 ---- file_name:	/home/fpvidal/miniconda3/envs/gvxr-ibsim2023-slides/lib/python3.10/site-packages/gvxrPython3/_gvxrPython3/welsh-dragon-small.stl	nb_faces:	457345	nb_vertices:	1372035	bounding_box (in cm):	(-4.47065, -74.9368, 23.5909)	(2.37482, -59.4256, 36.0343)
+Mon Oct 23 14:42:21 2023 ---- Initialise the renderer
+Mon Oct 23 14:50:05 2023 ---- Initialise the renderer
+Mon Oct 23 14:52:49 2023 ---- Quit and destroy all the windows
+Mon Oct 23 14:52:49 2023 ---- Destroy all the windows
+Mon Oct 23 14:52:49 2023 ---- Destroy window 0(0x55567a636370)
+--------------------------------------------------------------------------------
+Mon Oct 23 14:52:49 2023 ---- Close log file	gvxr.log
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+Mon Oct 23 14:52:59 2023 ---- Open log file	gvxr.log
+--------------------------------------------------------------------------------
+Mon Oct 23 14:52:59 2023 ---- Create window (ID: -1)
+Mon Oct 23 14:52:59 2023 ---- Initialise GLFW
+Mon Oct 23 14:52:59 2023 ---- Create an OpenGL window with a 3.2 context.
+Mon Oct 23 14:52:59 2023 ---- Make the window's context current
+Mon Oct 23 14:52:59 2023 ---- Initialise GLEW
+Mon Oct 23 14:52:59 2023 ---- OpenGL vendor: NVIDIA Corporation
+Mon Oct 23 14:52:59 2023 ---- OpenGL renderer: NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2
+Mon Oct 23 14:52:59 2023 ---- OpenGL version: 3.2.0 NVIDIA 535.104.05
+Mon Oct 23 14:52:59 2023 ---- Use OpenGL 4.5.
+Mon Oct 23 14:52:59 2023 ---- Initialise the X-ray renderer if needed and if possible
+Mon Oct 23 14:52:59 2023 ---- file_name:	/home/fpvidal/miniconda3/envs/gvxr-ibsim2023-slides/lib/python3.10/site-packages/gvxrPython3/_gvxrPython3/welsh-dragon-small.stl	nb_faces:	457345	nb_vertices:	1372035	bounding_box (in cm):	(-4.47065, -74.9368, 23.5909)	(2.37482, -59.4256, 36.0343)
+Mon Oct 23 14:53:00 2023 ---- Initialise the renderer
+
+
+--------------------------------------------------------------------------------
+Mon Oct 23 15:00:25 2023 ---- Open log file	gvxr.log
+--------------------------------------------------------------------------------
+Mon Oct 23 15:00:25 2023 ---- Create window (ID: -1)
+Mon Oct 23 15:00:26 2023 ---- Initialise GLFW
+Mon Oct 23 15:00:26 2023 ---- Create an OpenGL window with a 3.2 context.
+Mon Oct 23 15:00:26 2023 ---- Make the window's context current
+Mon Oct 23 15:00:26 2023 ---- Initialise GLEW
+Mon Oct 23 15:00:26 2023 ---- OpenGL vendor: NVIDIA Corporation
+Mon Oct 23 15:00:26 2023 ---- OpenGL renderer: NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2
+Mon Oct 23 15:00:26 2023 ---- OpenGL version: 3.2.0 NVIDIA 535.104.05
+Mon Oct 23 15:00:26 2023 ---- Use OpenGL 4.5.
+Mon Oct 23 15:00:26 2023 ---- Initialise the X-ray renderer if needed and if possible
+Mon Oct 23 15:00:26 2023 ---- file_name:	/home/fpvidal/miniconda3/envs/gvxr-ibsim2023-slides/lib/python3.10/site-packages/gvxrPython3/_gvxrPython3/welsh-dragon-small.stl	nb_faces:	457345	nb_vertices:	1372035	bounding_box (in cm):	(-4.47065, -74.9368, 23.5909)	(2.37482, -59.4256, 36.0343)
+Mon Oct 23 15:00:26 2023 ---- Initialise the renderer
+
+
+--------------------------------------------------------------------------------
+Mon Oct 23 15:01:37 2023 ---- Open log file	gvxr.log
+--------------------------------------------------------------------------------
+Mon Oct 23 15:01:37 2023 ---- Create window (ID: -1)
+Mon Oct 23 15:01:37 2023 ---- Initialise GLFW
+Mon Oct 23 15:01:37 2023 ---- Create an OpenGL window with a 3.2 context.
+Mon Oct 23 15:01:37 2023 ---- Make the window's context current
+Mon Oct 23 15:01:37 2023 ---- Initialise GLEW
+Mon Oct 23 15:01:37 2023 ---- OpenGL vendor: NVIDIA Corporation
+Mon Oct 23 15:01:37 2023 ---- OpenGL renderer: NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2
+Mon Oct 23 15:01:37 2023 ---- OpenGL version: 3.2.0 NVIDIA 535.104.05
+Mon Oct 23 15:01:37 2023 ---- Use OpenGL 4.5.
+Mon Oct 23 15:01:37 2023 ---- Initialise the X-ray renderer if needed and if possible
+Mon Oct 23 15:01:37 2023 ---- file_name:	/home/fpvidal/miniconda3/envs/gvxr-ibsim2023-slides/lib/python3.10/site-packages/gvxrPython3/_gvxrPython3/welsh-dragon-small.stl	nb_faces:	457345	nb_vertices:	1372035	bounding_box (in cm):	(-44.7065, -749.368, 235.909)	(23.7482, -594.256, 360.343)
+Mon Oct 23 15:01:38 2023 ---- Initialise the renderer
+Mon Oct 23 15:02:22 2023 ---- Initialise the renderer
+Mon Oct 23 15:02:42 2023 ---- Initialise the renderer
+Mon Oct 23 15:03:02 2023 ---- Initialise the renderer
+Mon Oct 23 15:05:54 2023 ---- Quit and destroy all the windows
+Mon Oct 23 15:05:54 2023 ---- Destroy all the windows
+Mon Oct 23 15:05:54 2023 ---- Destroy window 0(0x55fca659da20)
+--------------------------------------------------------------------------------
+Mon Oct 23 15:05:54 2023 ---- Close log file	gvxr.log
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+Mon Oct 23 15:05:58 2023 ---- Open log file	gvxr.log
+--------------------------------------------------------------------------------
+Mon Oct 23 15:05:58 2023 ---- Create window (ID: -1)
+Mon Oct 23 15:05:58 2023 ---- Initialise GLFW
+Mon Oct 23 15:05:58 2023 ---- Create an OpenGL window with a 3.2 context.
+Mon Oct 23 15:05:58 2023 ---- Make the window's context current
+Mon Oct 23 15:05:58 2023 ---- Initialise GLEW
+Mon Oct 23 15:05:58 2023 ---- OpenGL vendor: NVIDIA Corporation
+Mon Oct 23 15:05:58 2023 ---- OpenGL renderer: NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2
+Mon Oct 23 15:05:58 2023 ---- OpenGL version: 3.2.0 NVIDIA 535.104.05
+Mon Oct 23 15:05:58 2023 ---- Use OpenGL 4.5.
+Mon Oct 23 15:05:58 2023 ---- Initialise the X-ray renderer if needed and if possible
+Mon Oct 23 15:05:59 2023 ---- file_name:	/home/fpvidal/miniconda3/envs/gvxr-ibsim2023-slides/lib/python3.10/site-packages/gvxrPython3/_gvxrPython3/welsh-dragon-small.stl	nb_faces:	457345	nb_vertices:	1372035	bounding_box (in cm):	(-44.7065, -749.368, 235.909)	(23.7482, -594.256, 360.343)
+Mon Oct 23 15:05:59 2023 ---- Initialise the renderer
+Mon Oct 23 15:08:31 2023 ---- Initialise the renderer
+
+
+--------------------------------------------------------------------------------
+Mon Oct 23 15:08:44 2023 ---- Open log file	gvxr.log
+--------------------------------------------------------------------------------
+Mon Oct 23 15:08:44 2023 ---- Create window (ID: -1)
+Mon Oct 23 15:08:45 2023 ---- Initialise GLFW
+Mon Oct 23 15:08:45 2023 ---- Create an OpenGL window with a 3.2 context.
+Mon Oct 23 15:08:45 2023 ---- Make the window's context current
+Mon Oct 23 15:08:45 2023 ---- Initialise GLEW
+Mon Oct 23 15:08:45 2023 ---- OpenGL vendor: NVIDIA Corporation
+Mon Oct 23 15:08:45 2023 ---- OpenGL renderer: NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2
+Mon Oct 23 15:08:45 2023 ---- OpenGL version: 3.2.0 NVIDIA 535.104.05
+Mon Oct 23 15:08:45 2023 ---- Use OpenGL 4.5.
+Mon Oct 23 15:08:45 2023 ---- Initialise the X-ray renderer if needed and if possible
+Mon Oct 23 15:08:45 2023 ---- file_name:	/home/fpvidal/miniconda3/envs/gvxr-ibsim2023-slides/lib/python3.10/site-packages/gvxrPython3/_gvxrPython3/welsh-dragon-small.stl	nb_faces:	457345	nb_vertices:	1372035	bounding_box (in cm):	(-44.7065, -749.368, 235.909)	(23.7482, -594.256, 360.343)
+Mon Oct 23 15:08:45 2023 ---- Initialise the renderer
+Mon Oct 23 15:09:22 2023 ---- file_name:	/home/fpvidal/miniconda3/envs/gvxr-ibsim2023-slides/lib/python3.10/site-packages/gvxrPython3/_gvxrPython3/welsh-dragon-small.stl	nb_faces:	457345	nb_vertices:	1372035	bounding_box (in cm):	(-4.47065, -74.9368, 23.5909)	(2.37482, -59.4256, 36.0343)
+Mon Oct 23 15:09:22 2023 ---- Initialise the renderer
+Mon Oct 23 15:09:54 2023 ---- file_name:	/home/fpvidal/miniconda3/envs/gvxr-ibsim2023-slides/lib/python3.10/site-packages/gvxrPython3/_gvxrPython3/welsh-dragon-small.stl	nb_faces:	457345	nb_vertices:	1372035	bounding_box (in cm):	(-44.7065, -749.368, 235.909)	(23.7482, -594.256, 360.343)
+Mon Oct 23 15:09:54 2023 ---- Initialise the renderer
+Mon Oct 23 15:10:05 2023 ---- file_name:	/home/fpvidal/miniconda3/envs/gvxr-ibsim2023-slides/lib/python3.10/site-packages/gvxrPython3/_gvxrPython3/welsh-dragon-small.stl	nb_faces:	457345	nb_vertices:	1372035	bounding_box (in cm):	(-44.7065, -749.368, 235.909)	(23.7482, -594.256, 360.343)
+Mon Oct 23 15:10:09 2023 ---- Initialise the renderer
+Mon Oct 23 15:10:34 2023 ---- Quit and destroy all the windows
+Mon Oct 23 15:10:34 2023 ---- Destroy all the windows
+Mon Oct 23 15:10:34 2023 ---- Destroy window 0(0x55aa7e8859c0)
+--------------------------------------------------------------------------------
+Mon Oct 23 15:10:34 2023 ---- Close log file	gvxr.log
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+Mon Oct 23 15:10:39 2023 ---- Open log file	gvxr.log
+--------------------------------------------------------------------------------
+Mon Oct 23 15:10:39 2023 ---- Create window (ID: -1)
+Mon Oct 23 15:10:39 2023 ---- Initialise GLFW
+Mon Oct 23 15:10:39 2023 ---- Create an OpenGL window with a 3.2 context.
+Mon Oct 23 15:10:39 2023 ---- Make the window's context current
+Mon Oct 23 15:10:39 2023 ---- Initialise GLEW
+Mon Oct 23 15:10:39 2023 ---- OpenGL vendor: NVIDIA Corporation
+Mon Oct 23 15:10:39 2023 ---- OpenGL renderer: NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2
+Mon Oct 23 15:10:39 2023 ---- OpenGL version: 3.2.0 NVIDIA 535.104.05
+Mon Oct 23 15:10:39 2023 ---- Use OpenGL 4.5.
+Mon Oct 23 15:10:39 2023 ---- Initialise the X-ray renderer if needed and if possible
+Mon Oct 23 15:10:39 2023 ---- file_name:	/home/fpvidal/miniconda3/envs/gvxr-ibsim2023-slides/lib/python3.10/site-packages/gvxrPython3/_gvxrPython3/welsh-dragon-small.stl	nb_faces:	457345	nb_vertices:	1372035	bounding_box (in cm):	(-44.7065, -749.368, 235.909)	(23.7482, -594.256, 360.343)
+Mon Oct 23 15:10:39 2023 ---- Initialise the renderer
+Mon Oct 23 15:11:51 2023 ---- Initialise the renderer
+Mon Oct 23 15:12:03 2023 ---- Initialise the renderer
+Mon Oct 23 15:12:25 2023 ---- Initialise the renderer
+Mon Oct 23 15:12:41 2023 ---- Initialise the renderer
+Mon Oct 23 15:15:34 2023 ---- file_name:	/home/fpvidal/miniconda3/envs/gvxr-ibsim2023-slides/lib/python3.10/site-packages/gvxrPython3/_gvxrPython3/welsh-dragon-small.stl	nb_faces:	457345	nb_vertices:	1372035	bounding_box (in cm):	(-44.7065, -749.368, 235.909)	(23.7482, -594.256, 360.343)
+Mon Oct 23 15:15:39 2023 ---- Initialise the renderer
+Mon Oct 23 15:16:11 2023 ---- Initialise the renderer
+Mon Oct 23 15:16:22 2023 ---- Initialise the renderer
+Mon Oct 23 15:16:25 2023 ---- Initialise the renderer
+Mon Oct 23 15:16:28 2023 ---- Initialise the renderer
+
+
+--------------------------------------------------------------------------------
+Mon Oct 23 15:17:13 2023 ---- Open log file	gvxr.log
+--------------------------------------------------------------------------------
+Mon Oct 23 15:17:13 2023 ---- Create window (ID: -1)
+Mon Oct 23 15:17:13 2023 ---- Initialise GLFW
+Mon Oct 23 15:17:13 2023 ---- Create an OpenGL window with a 3.2 context.
+Mon Oct 23 15:17:13 2023 ---- Make the window's context current
+Mon Oct 23 15:17:13 2023 ---- Initialise GLEW
+Mon Oct 23 15:17:13 2023 ---- OpenGL vendor: NVIDIA Corporation
+Mon Oct 23 15:17:13 2023 ---- OpenGL renderer: NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2
+Mon Oct 23 15:17:13 2023 ---- OpenGL version: 3.2.0 NVIDIA 535.104.05
+Mon Oct 23 15:17:13 2023 ---- Use OpenGL 4.5.
+Mon Oct 23 15:17:13 2023 ---- Initialise the X-ray renderer if needed and if possible
+Mon Oct 23 15:17:13 2023 ---- file_name:	/home/fpvidal/miniconda3/envs/gvxr-ibsim2023-slides/lib/python3.10/site-packages/gvxrPython3/_gvxrPython3/welsh-dragon-small.stl	nb_faces:	457345	nb_vertices:	1372035	bounding_box (in cm):	(-44.7065, -749.368, 235.909)	(23.7482, -594.256, 360.343)
+Mon Oct 23 15:17:13 2023 ---- Initialise the renderer
+Mon Oct 23 15:19:02 2023 ---- Quit and destroy all the windows
+Mon Oct 23 15:19:02 2023 ---- Destroy all the windows
+Mon Oct 23 15:19:02 2023 ---- Destroy window 0(0x564b76798ff0)
+--------------------------------------------------------------------------------
+Mon Oct 23 15:19:02 2023 ---- Close log file	gvxr.log
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+Mon Oct 23 15:19:06 2023 ---- Open log file	gvxr.log
+--------------------------------------------------------------------------------
+Mon Oct 23 15:19:06 2023 ---- Create window (ID: -1)
+Mon Oct 23 15:19:06 2023 ---- Initialise GLFW
+Mon Oct 23 15:19:06 2023 ---- Create an OpenGL window with a 3.2 context.
+Mon Oct 23 15:19:07 2023 ---- Make the window's context current
+Mon Oct 23 15:19:07 2023 ---- Initialise GLEW
+Mon Oct 23 15:19:07 2023 ---- OpenGL vendor: NVIDIA Corporation
+Mon Oct 23 15:19:07 2023 ---- OpenGL renderer: NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2
+Mon Oct 23 15:19:07 2023 ---- OpenGL version: 3.2.0 NVIDIA 535.104.05
+Mon Oct 23 15:19:07 2023 ---- Use OpenGL 4.5.
+Mon Oct 23 15:19:07 2023 ---- Initialise the X-ray renderer if needed and if possible
+Mon Oct 23 15:19:07 2023 ---- file_name:	/home/fpvidal/miniconda3/envs/gvxr-ibsim2023-slides/lib/python3.10/site-packages/gvxrPython3/_gvxrPython3/welsh-dragon-small.stl	nb_faces:	457345	nb_vertices:	1372035	bounding_box (in cm):	(-44.7065, -749.368, 235.909)	(23.7482, -594.256, 360.343)
+Mon Oct 23 15:19:07 2023 ---- Initialise the renderer
+Mon Oct 23 15:31:00 2023 ---- Initialise the renderer
+
+
+--------------------------------------------------------------------------------
+Mon Oct 23 15:32:07 2023 ---- Open log file	gvxr.log
+--------------------------------------------------------------------------------
+Mon Oct 23 15:32:07 2023 ---- Create window (ID: -1)
+Mon Oct 23 15:32:07 2023 ---- Initialise GLFW
+Mon Oct 23 15:32:07 2023 ---- Create an OpenGL window with a 3.2 context.
+Mon Oct 23 15:32:07 2023 ---- Make the window's context current
+Mon Oct 23 15:32:07 2023 ---- Initialise GLEW
+Mon Oct 23 15:32:07 2023 ---- OpenGL vendor: NVIDIA Corporation
+Mon Oct 23 15:32:07 2023 ---- OpenGL renderer: NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2
+Mon Oct 23 15:32:07 2023 ---- OpenGL version: 3.2.0 NVIDIA 535.104.05
+Mon Oct 23 15:32:07 2023 ---- Use OpenGL 4.5.
+Mon Oct 23 15:32:07 2023 ---- Initialise the X-ray renderer if needed and if possible
+Mon Oct 23 15:32:07 2023 ---- file_name:	/home/fpvidal/miniconda3/envs/gvxr-ibsim2023-slides/lib/python3.10/site-packages/gvxrPython3/_gvxrPython3/welsh-dragon-small.stl	nb_faces:	457345	nb_vertices:	1372035	bounding_box (in cm):	(-44.7065, -749.368, 235.909)	(23.7482, -594.256, 360.343)
+Mon Oct 23 15:32:08 2023 ---- Initialise the renderer
+Mon Oct 23 15:56:37 2023 ---- Quit and destroy all the windows
+Mon Oct 23 15:56:37 2023 ---- Destroy all the windows
+Mon Oct 23 15:56:37 2023 ---- Destroy window 0(0x557f68931240)
+--------------------------------------------------------------------------------
+Mon Oct 23 15:56:37 2023 ---- Close log file	gvxr.log
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+Mon Oct 23 15:56:42 2023 ---- Open log file	gvxr.log
+--------------------------------------------------------------------------------
+Mon Oct 23 15:56:42 2023 ---- Create window (ID: -1)
+Mon Oct 23 15:56:42 2023 ---- Initialise GLFW
+Mon Oct 23 15:56:42 2023 ---- Create an OpenGL window with a 3.2 context.
+Mon Oct 23 15:56:42 2023 ---- Make the window's context current
+Mon Oct 23 15:56:42 2023 ---- Initialise GLEW
+Mon Oct 23 15:56:42 2023 ---- OpenGL vendor: NVIDIA Corporation
+Mon Oct 23 15:56:42 2023 ---- OpenGL renderer: NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2
+Mon Oct 23 15:56:42 2023 ---- OpenGL version: 3.2.0 NVIDIA 535.104.05
+Mon Oct 23 15:56:42 2023 ---- Use OpenGL 4.5.
+Mon Oct 23 15:56:42 2023 ---- Initialise the X-ray renderer if needed and if possible
+Mon Oct 23 15:56:42 2023 ---- file_name:	/home/fpvidal/miniconda3/envs/gvxr-ibsim2023-slides/lib/python3.10/site-packages/gvxrPython3/_gvxrPython3/welsh-dragon-small.stl	nb_faces:	457345	nb_vertices:	1372035	bounding_box (in cm):	(-44.7065, -749.368, 235.909)	(23.7482, -594.256, 360.343)
+Mon Oct 23 15:56:43 2023 ---- Initialise the renderer
+Mon Oct 23 16:00:02 2023 ---- Quit and destroy all the windows
+Mon Oct 23 16:00:02 2023 ---- Destroy all the windows
+Mon Oct 23 16:00:02 2023 ---- Destroy window 0(0x561ff16edaf0)
+--------------------------------------------------------------------------------
+Mon Oct 23 16:00:02 2023 ---- Close log file	gvxr.log
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+Mon Oct 23 16:00:06 2023 ---- Open log file	gvxr.log
+--------------------------------------------------------------------------------
+Mon Oct 23 16:00:06 2023 ---- Create window (ID: -1)
+Mon Oct 23 16:00:06 2023 ---- Initialise GLFW
+Mon Oct 23 16:00:06 2023 ---- Create an OpenGL window with a 3.2 context.
+Mon Oct 23 16:00:07 2023 ---- Make the window's context current
+Mon Oct 23 16:00:07 2023 ---- Initialise GLEW
+Mon Oct 23 16:00:07 2023 ---- OpenGL vendor: NVIDIA Corporation
+Mon Oct 23 16:00:07 2023 ---- OpenGL renderer: NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2
+Mon Oct 23 16:00:07 2023 ---- OpenGL version: 3.2.0 NVIDIA 535.104.05
+Mon Oct 23 16:00:07 2023 ---- Use OpenGL 4.5.
+Mon Oct 23 16:00:07 2023 ---- Initialise the X-ray renderer if needed and if possible
+Mon Oct 23 16:00:07 2023 ---- file_name:	/home/fpvidal/miniconda3/envs/gvxr-ibsim2023-slides/lib/python3.10/site-packages/gvxrPython3/_gvxrPython3/welsh-dragon-small.stl	nb_faces:	457345	nb_vertices:	1372035	bounding_box (in cm):	(-44.7065, -749.368, 235.909)	(23.7482, -594.256, 360.343)
+Mon Oct 23 16:00:07 2023 ---- Initialise the renderer
+Mon Oct 23 16:04:54 2023 ---- Quit and destroy all the windows
+Mon Oct 23 16:04:54 2023 ---- Destroy all the windows
+Mon Oct 23 16:04:54 2023 ---- Destroy window 0(0x55be104ac230)
+--------------------------------------------------------------------------------
+Mon Oct 23 16:04:54 2023 ---- Close log file	gvxr.log
+--------------------------------------------------------------------------------
